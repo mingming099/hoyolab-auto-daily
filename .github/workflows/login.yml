@@ -30,3 +30,21 @@ jobs:
           COOKIE: ${{ secrets.COOKIE2 }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USER: ${{ secrets.DISCORD_USER }}
+      - name: Check In 3
+        run: node index.js ${{ vars.GAMES3 }}
+        env:
+          COOKIE: ${{ secrets.COOKIE3 }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USER: ${{ secrets.DISCORD_USER }}
+      - name: Check In 4
+        run: node index.js ${{ vars.GAMES4 }}
+        env:
+          COOKIE: ${{ secrets.COOKIE4 }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USER: ${{ secrets.DISCORD_USER }}     
+      - name: Check In 5
+        run: node index.js ${{ vars.GAMES5 }}
+        env:
+          COOKIE: ${{ secrets.COOKIE5 }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USER: ${{ secrets.DISCORD_USER }}     
