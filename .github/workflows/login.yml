@@ -23,3 +23,10 @@ jobs:
           COOKIE: ${{ secrets.COOKIE }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           DISCORD_USER: ${{ secrets.DISCORD_USER }}
+          
+      - name: Check In 2
+        run: node index.js ${{ vars.GAMES2 }}
+        env:
+          COOKIE: ${{ secrets.COOKIE2 }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USER: ${{ secrets.DISCORD_USER }}
